@@ -1,0 +1,14 @@
+D:\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\bin\Debug\Nomina.DAC.dll
+D:\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\bin\Debug\Nomina.DAC.pdb
+D:\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\bin\Debug\Properties.dll
+D:\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\bin\Debug\Properties.pdb
+D:\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\obj\Debug\Nomina.DAC.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\obj\Debug\Nomina.DAC.dll
+D:\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\obj\Debug\Nomina.DAC.pdb
+C:\Users\Joel\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\bin\Debug\Nomina.DAC.dll
+C:\Users\Joel\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\bin\Debug\Nomina.DAC.pdb
+C:\Users\Joel\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\bin\Debug\Properties.dll
+C:\Users\Joel\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\bin\Debug\Properties.pdb
+C:\Users\Joel\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\obj\Debug\Nomina.DAC.csprojResolveAssemblyReference.cache
+C:\Users\Joel\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\obj\Debug\Nomina.DAC.dll
+C:\Users\Joel\Documents\Visual Studio 2010\Projects\Nomina\Nomina.DAC\obj\Debug\Nomina.DAC.pdb
