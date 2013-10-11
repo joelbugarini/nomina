@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <assemblyIdentity name="NominaUI.application" version="1.0.0.8" publicKeyToken="b1d5c140fc3b2a9e" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:publisher="NominaUI" asmv2:product="NominaUI" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <deployment install="true" mapFileExtensions="true">
+    <subscription>
+      <update>
+        <beforeApplicationStartup />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="http://jbugarini/nomina/NominaUI.application" />
+  </deployment>
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
+  </compatibleFrameworks>
+  <dependency>
+    <dependentAssembly dependencyType="install" codebase="Application Files\NominaUI_1_0_0_8\NominaUI.exe.manifest" size="9903">
+      <assemblyIdentity name="NominaUI.exe" version="1.0.0.8" publicKeyToken="b1d5c140fc3b2a9e" language="neutral" processorArchitecture="msil" type="win32" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>vnSKDoBgF16/dcLjttZZRPPK2Qc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=JBUGARINI\Joel" issuerKeyHash="cb337befd023ace112b13e8c64d536534306f11c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>xbbNqd3hJS1K2U8ceX1ANY9Oo0g=</DigestValue></Reference></SignedInfo><SignatureValue>LIFr7ggeS049aJTkU+vDKzrJcycu/k4LPMiXolxUXlDSj/CKiI6031aV1Jst/H1vKzlGiaPdvtDqnhbaR3z/TnXdJNK+t59bLWSWXW6BYOjllsAMU+uQtJmDr9OhxKsUUXIsOVm10HZ6VcZUezsViodsuyhcMb3cIykJ+FS+upc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>6OUcsRPGcVd37QdlAyQrYwbXKqZ7ETCM4KpO01+3tJ5R0j1k8rvuFJmurQWXe2JuRetFSU3IT6YzOV2Yvs9LDq81I8XPPFjjyCixkmXvZ/mjsI9ywPFfLMxCO36NQ6Gur18qat9MQDvzF3rOWXvMeduMYH44yeTEeSGE6n4Z6PM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="48a34e8f35407d791c4fd94a2d25e1dda9cdb6c5" Description="" Url=""><as:assemblyIdentity name="NominaUI.application" version="1.0.0.8" publicKeyToken="b1d5c140fc3b2a9e" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=JBUGARINI\Joel</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>e7/uN3JcTNxK4YZyM+sqtO4gfq4=</DigestValue></Reference></SignedInfo><SignatureValue>A0bccMPXXn+vZeIC5+TUdmVlG5L7gm8zAyDcYwxyAa4YYlzG6kipDcHiWnkru8gXQ0gVtr60qorWGVTbblLt7bB9GUG6HsnHafXFCY1WQ7LzE/nN2IO1AjiX9D+6VKq0IzXRjOje98VU4eEPOVOrNm03NrZraoJa44IBWCK1xms=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>6OUcsRPGcVd37QdlAyQrYwbXKqZ7ETCM4KpO01+3tJ5R0j1k8rvuFJmurQWXe2JuRetFSU3IT6YzOV2Yvs9LDq81I8XPPFjjyCixkmXvZ/mjsI9ywPFfLMxCO36NQ6Gur18qat9MQDvzF3rOWXvMeduMYH44yeTEeSGE6n4Z6PM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQETyEhKaOrKFJ0lR9TSBbazANBgkqhkiG9w0BAQUFADAnMSUwIwYDVQQDHhwASgBCAFUARwBBAFIASQBOAEkAXABKAG8AZQBsMB4XDTEzMDczMTE4Mzc0NVoXDTE0MDgwMTAwMzc0NVowJzElMCMGA1UEAx4cAEoAQgBVAEcAQQBSAEkATgBJAFwASgBvAGUAbDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA6OUcsRPGcVd37QdlAyQrYwbXKqZ7ETCM4KpO01+3tJ5R0j1k8rvuFJmurQWXe2JuRetFSU3IT6YzOV2Yvs9LDq81I8XPPFjjyCixkmXvZ/mjsI9ywPFfLMxCO36NQ6Gur18qat9MQDvzF3rOWXvMeduMYH44yeTEeSGE6n4Z6PMCAwEAATANBgkqhkiG9w0BAQUFAAOBgQCHGdEBuZKNjKCEOa4hreWQS+rPovyFk+Mksu93Df5ZLeV6bFgd+ZeJzYo/H5+g+H1AK892KhlfoWRgau16gRbV5kjlfaDK+KtnuUixqqSPnukLwUzoUMEqTYb3VTIBs/lxdqdHeIq5+gsQrTtv3vvOlY1ObzTjASC2y9/ADrFBXA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55251869-DDF4-4BBB-AA76-AAA1A4C747EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NominaUI</RootNamespace>
+    <AssemblyName>NominaUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/nomina/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>29135BC3A6EC089DD17AF9471F302F8EB2945473</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>NominaUI_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FirstFloor.ModernUI">
+      <HintPath>..\packages\ModernUI.WPF.1.0.3\lib\net40\FirstFloor.ModernUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windows.Shell">
+      <HintPath>..\packages\ModernUI.WPF.1.0.3\lib\net40\Microsoft.Windows.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reports\Compensacion.xaml.cs">
+      <DependentUpon>Compensacion.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Assets\ModernUI.ThemeOne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Calendar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Content\ListBono.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\ListCapacitacion.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\ListCapacitacionEmpleado.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\ListCuenta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\ListEmpleado.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\ListEmpleadoHuella.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\ListHorario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\ListIncidente.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\ListJustificante.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\ListPagos.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\ListPermiso.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\ListRegistro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\ListTipoHuella.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\ListVacaciones.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SingleNominaEmpleado.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SingleBono.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SingleCapacitacion.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SingleCapacitacionEmpleado.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SingleCuenta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SingleEmpleado.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SingleEmpleadoHuella.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SingleHorario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SingleIncidente.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SingleJustificante.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SinglePagos.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SinglePermiso.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SingleRegistro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SingleTipoHuella.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Content\SingleVacaciones.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Calendar.xaml.cs">
+      <DependentUpon>Calendar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListBono.xaml.cs">
+      <DependentUpon>ListBono.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListCapacitacion.xaml.cs">
+      <DependentUpon>ListCapacitacion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListCapacitacionEmpleado.xaml.cs">
+      <DependentUpon>ListCapacitacionEmpleado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListCuenta.xaml.cs">
+      <DependentUpon>ListCuenta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListEmpleado.xaml.cs">
+      <DependentUpon>ListEmpleado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListEmpleadoHuella.xaml.cs">
+      <DependentUpon>ListEmpleadoHuella.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListHorario.xaml.cs">
+      <DependentUpon>ListHorario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListIncidente.xaml.cs">
+      <DependentUpon>ListIncidente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListJustificante.xaml.cs">
+      <DependentUpon>ListJustificante.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListPagos.xaml.cs">
+      <DependentUpon>ListPagos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListPermiso.xaml.cs">
+      <DependentUpon>ListPermiso.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListRegistro.xaml.cs">
+      <DependentUpon>ListRegistro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListTipoHuella.xaml.cs">
+      <DependentUpon>ListTipoHuella.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListVacaciones.xaml.cs">
+      <DependentUpon>ListVacaciones.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleNominaEmpleado.xaml.cs">
+      <DependentUpon>SingleNominaEmpleado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleBono.xaml.cs">
+      <DependentUpon>SingleBono.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleCapacitacion.xaml.cs">
+      <DependentUpon>SingleCapacitacion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleCapacitacionEmpleado.xaml.cs">
+      <DependentUpon>SingleCapacitacionEmpleado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleCuenta.xaml.cs">
+      <DependentUpon>SingleCuenta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleEmpleado.xaml.cs">
+      <DependentUpon>SingleEmpleado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleEmpleadoHuella.xaml.cs">
+      <DependentUpon>SingleEmpleadoHuella.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleHorario.xaml.cs">
+      <DependentUpon>SingleHorario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleIncidente.xaml.cs">
+      <DependentUpon>SingleIncidente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleJustificante.xaml.cs">
+      <DependentUpon>SingleJustificante.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SinglePagos.xaml.cs">
+      <DependentUpon>SinglePagos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SinglePermiso.xaml.cs">
+      <DependentUpon>SinglePermiso.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleRegistro.xaml.cs">
+      <DependentUpon>SingleRegistro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleTipoHuella.xaml.cs">
+      <DependentUpon>SingleTipoHuella.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleVacaciones.xaml.cs">
+      <DependentUpon>SingleVacaciones.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Content\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Content\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Content\SettingsAppearance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Content\SettingsAppearance.xaml.cs">
+      <DependentUpon>SettingsAppearance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SettingsAppearanceViewModel.cs" />
+    <Page Include="Pages\Bonos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Content\ListSueldo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Pages\Bonos.xaml.cs">
+      <DependentUpon>Bonos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\ListSueldo.xaml.cs">
+      <DependentUpon>ListSueldo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Content\SingleSueldo.xaml.cs">
+      <DependentUpon>SingleSueldo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Tabulador.xaml.cs">
+      <DependentUpon>Tabulador.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Page Include="Content\SingleSueldo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Tabulador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Reports\Compensacion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NominaUI_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nomina.BC\Nomina.BC.csproj">
+      <Project>{e2b74447-b330-4802-ac67-87fad620d8f4}</Project>
+      <Name>Nomina.BC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Properties\Properties.csproj">
+      <Project>{1c8ebc83-32bf-4ef8-9611-9ade6089a290}</Project>
+      <Name>Properties</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

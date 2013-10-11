@@ -1,0 +1,57 @@
+<UserControl x:Class="Nomina.Content.SingleHorario"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel MinWidth="200">
+                <StackPanel MaxWidth="200" Margin="0,0,0,20" HorizontalAlignment="Left" Width="400">
+                    <TextBlock Text="Horario" Style="{StaticResource Heading2}" />
+                   
+                    <TextBlock Text="HoraIn:"  />
+                    <TextBox x:Name="txtHoraIn" Text="{Binding HoraIn}" />
+   
+                    <TextBlock Text="HoraOut:"  />
+                    <TextBox x:Name="txtHoraOut" Text="{Binding HoraOut}" />
+   
+                    <TextBlock Text="HoraInMed:"  />
+                    <TextBox x:Name="txtHoraInMed" Text="{Binding HoraInMed}" />
+   
+                    <TextBlock Text="HoraOutMed:"  />
+                    <TextBox x:Name="txtHoraOutMed" Text="{Binding HoraOutMed}" />
+   
+                    <TextBlock Text="Lunes:"  />
+                    <TextBox x:Name="txtLunes" Text="{Binding Lunes}" />
+   
+                    <TextBlock Text="Martes:"  />
+                    <TextBox x:Name="txtMartes" Text="{Binding Martes}" />
+   
+                    <TextBlock Text="Miercoles:"  />
+                    <TextBox x:Name="txtMiercoles" Text="{Binding Miercoles}" />
+   
+                    <TextBlock Text="Jueves:"  />
+                    <TextBox x:Name="txtJueves" Text="{Binding Jueves}" />
+   
+                    <TextBlock Text="Viernes:"  />
+                    <TextBox x:Name="txtViernes" Text="{Binding Viernes}" />
+   
+                    <TextBlock Text="Sabado:"  />
+                    <TextBox x:Name="txtSabado" Text="{Binding Sabado}" />
+   
+                    <TextBlock Text="Domingo:"  />
+                    <TextBox x:Name="txtDomingo" Text="{Binding Domingo}" />
+       
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal" >
+                    <Button x:Name="btnGuardar" MaxWidth="100" Content="guardar" Click="btnGuardar_Click" />
+                    <Button x:Name="btnActualizar" MaxWidth="100" Content="actualizar" Click="btnActualizar_Click" Visibility="Collapsed" />
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
